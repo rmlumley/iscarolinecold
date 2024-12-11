@@ -9,7 +9,7 @@ window.addEventListener("load", () => {
 	
 	
 	const base =
-    `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api}&units=imperial`;
+    `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api}&units=imperial`;
 	
 	console.log(base);
 	
