@@ -48,7 +48,7 @@ function weatherCheck(city) {
 		}
 		
 	 } else {
-		update.innerHTML = "<strong>Yes. It's really cold!</strong> Get her a blanket.";
+		update.innerHTML = "<strong>Yes. It's cold!</strong> Get her a blanket.";
 		bg.src=cool;
 		if ((currentTemp < 32)) {
 			update.innerHTML = "<strong>Yes. It's really cold!</strong> Get her a <em>heated</em> blanket.";
