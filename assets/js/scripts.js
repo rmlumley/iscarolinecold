@@ -3,9 +3,9 @@ import Alpine from 'alpinejs'
 
 window.addEventListener("load", () => {
 	const today = new Date();
-	const returnDate = new Date('2024-12-16');
+	const returnDate = new Date('2025-02-06');
 	if (today < returnDate) {
-		let city = "cancun,mx";
+		let city = "atlanta,ga,us";
 		weatherCheck(city);
 	} else {
 		let city = "madison,wi,us";
