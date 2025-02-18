@@ -29,6 +29,7 @@ function weatherCheck(city) {
 	const cool = "/img/cool.jpg";
 	const hot = "/img/hot.jpg";
 	const cloud = "/img/clouds.jpg";
+	const mayer = "/img/mayer.jpg";
 	
 	fetch(base)
     .then(response => response.json())
@@ -46,7 +47,9 @@ function weatherCheck(city) {
 			update.innerHTML = "<strong>No. It's hot!</strong> Let her roast. <em>But, perhaps it could be less cloudy.</em>";
 			bg.src=cloud;
 		}
-		
+	 } else if ((currentTemp) < 0) {
+		update.innerHTML = "<strong>Yes. It's so cold she is going to die!</strong> She wouldn't even look if John Mayer was naked."
+		bg.src=mayer;
 	 } else {
 		update.innerHTML = "<strong>Yes. It's cold!</strong> Get her a blanket.";
 		bg.src=cool;
